@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+# Hi there, I'm Prince Ismail Adedapo (Tunde) 👋
 
-## Project info
+<div align="center">
+  <img src="Image_of_Prince_ismail_adedapo.jpeg" alt="Prince Ismail Adedapo" width="250" style="border-radius: 50%; border: 4px solid #3b82f6;" />
+  <br />
+  <h3><b>Full Stack Developer | Fintech & Blockchain Specialist</b></h3>
+  <p>Building high-security financial applications and real-time trading platforms.</p>
+  <p>📍 Based in Nigeria</p>
+</div>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+### 🚀 About Me
+I am a Software Developer with a strong background in **Project Management**. I specialize in building enterprise-grade applications for the financial sector (Fintech/RegTech) and the Blockchain space. My work focuses on security, compliance automation, and high-frequency data handling.
 
-There are several ways of editing your application.
+* 🔭 I’m currently working on **Arbbot Pro** (High-frequency crypto arbitrage).
+* 🏦 I have built compliance engines for banking sectors (**RadarPro**, **AXIS**).
+* 🌱 I’m currently learning advanced **AI integration for SaaS**.
+* ⚡ Fun fact: I also run a snack business called **Cotolins Snacks Co.** 🍿
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 🛠️ Tech Stack & Tools
 
-Changes made via Lovable will be committed automatically to this repo.
+**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-**Use your preferred IDE**
+**Frameworks & Libraries**
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Databases & Cloud**
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 📂 Featured Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| **Arbbot Pro** | 📈 Institutional crypto/forex arbitrage platform. | React, TypeScript, Web3 |
+| **RadarPro** | 🔒 Enterprise banking solution for fraud detection. | Python, Django, React |
+| **AXIS** | 🛡️ AML Compliance engine for sanction screening. | Python, Django, Redis |
+| **RICA** | 📊 Regulatory reporting microservice for central banks. | Python, Pandas |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 📊 GitHub Stats
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical" alt="Tunde's Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
