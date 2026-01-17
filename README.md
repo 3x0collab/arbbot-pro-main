@@ -1,4 +1,4 @@
-# Hi there, I'm Prince Ismail Adedapo 👋
+
 
 <div align="center">
   <img src="Image_of_Prince_ismail_adedapo.jpeg" alt="Prince Ismail Adedapo" width="250" style="border-radius: 50%; border: 4px solid #3b82f6;" />
