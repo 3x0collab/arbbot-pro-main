@@ -1,0 +1,234 @@
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 228 47% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 228 47% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 47% 8%;
+
+    --primary: 157 100% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 228 47% 8%;
+
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 20% 40%;
+
+    --accent: 157 100% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 157 100% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 228 47% 8%;
+
+    --border: 210 30% 85%;
+    --input: 210 30% 90%;
+    --ring: 157 100% 40%;
+
+    --radius: 0.375rem;
+
+    --neon-green: 157 100% 40%;
+    --neon-green-glow: 0 0 20px hsl(157 100% 40% / 0.3);
+    --neon-gold: 45 100% 45%;
+    --neon-gold-glow: 0 0 20px hsl(45 100% 45% / 0.4);
+    
+    --grid-line: 210 30% 88%;
+    --table-header: 210 30% 95%;
+    --table-row-hover: 210 30% 92%;
+    --table-row-alt: 210 30% 97%;
+
+    --live-dot: 157 100% 40%;
+    --rank-high: 157 100% 35%;
+    --rank-mid: 45 100% 45%;
+    --rank-low: 0 84% 55%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 228 47% 8%;
+    --sidebar-primary: 157 100% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 228 47% 8%;
+    --sidebar-border: 210 30% 85%;
+    --sidebar-ring: 157 100% 40%;
+  }
+
+  .dark {
+    --background: 228 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 228 47% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 228 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 157 100% 50%;
+    --primary-foreground: 228 47% 8%;
+
+    --secondary: 228 30% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 228 30% 18%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 157 100% 50%;
+    --accent-foreground: 228 47% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 157 100% 50%;
+    --success-foreground: 228 47% 8%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 228 47% 8%;
+
+    --border: 228 30% 20%;
+    --input: 228 30% 18%;
+    --ring: 157 100% 50%;
+
+    --neon-green: 157 100% 50%;
+    --neon-green-glow: 0 0 20px hsl(157 100% 50% / 0.4);
+    --neon-gold: 45 100% 50%;
+    --neon-gold-glow: 0 0 20px hsl(45 100% 50% / 0.5);
+    
+    --grid-line: 228 30% 22%;
+    --table-header: 228 30% 12%;
+    --table-row-hover: 228 30% 14%;
+    --table-row-alt: 228 30% 10%;
+
+    --live-dot: 157 100% 50%;
+    --rank-high: 157 100% 50%;
+    --rank-mid: 45 100% 50%;
+    --rank-low: 0 84% 60%;
+
+    --sidebar-background: 228 47% 9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 157 100% 50%;
+    --sidebar-primary-foreground: 228 47% 8%;
+    --sidebar-accent: 228 30% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 228 30% 20%;
+    --sidebar-ring: 157 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono antialiased;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .data-grid {
+    @apply border border-grid-line;
+  }
+
+  .data-grid-header {
+    @apply bg-table-header text-muted-foreground text-[11px] uppercase tracking-wider font-medium;
+  }
+
+  .data-grid-row {
+    @apply border-b border-grid-line hover:bg-table-row-hover transition-colors;
+  }
+
+  .data-grid-row-alt {
+    @apply bg-table-row-alt;
+  }
+
+  .data-grid-cell {
+    @apply px-3 py-1.5 border-r border-grid-line text-xs;
+  }
+
+  .data-grid-cell:last-child {
+    @apply border-r-0;
+  }
+
+  .neon-gold {
+    @apply text-primary;
+    text-shadow: var(--neon-gold-glow);
+  }
+
+  .live-dot {
+    @apply w-2 h-2 rounded-full bg-success animate-pulse;
+  }
+
+  .rank-badge {
+    @apply px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase;
+  }
+
+  .rank-high {
+    @apply bg-success/20 text-success;
+  }
+
+  .rank-mid {
+    @apply bg-warning/20 text-warning;
+  }
+
+  .rank-low {
+    @apply bg-destructive/20 text-destructive;
+  }
+
+  .export-btn {
+    @apply px-3 py-1.5 text-xs font-medium border border-border bg-secondary hover:bg-muted transition-colors rounded;
+  }
+
+  .analyze-btn {
+    @apply px-2 py-1 text-[10px] font-semibold uppercase bg-primary text-primary-foreground hover:bg-primary/90 rounded transition-colors;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-rate-positive {
+    @apply text-success;
+  }
+
+  .text-rate-negative {
+    @apply text-destructive;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) hsl(var(--background));
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 3px;
+  }
+}
